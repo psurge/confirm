@@ -1,5 +1,17 @@
+<!DOCTYPE html>
 <html>
 <body>
-<h1>kumar</h1>
+<script>
+  
+  window.onload = function() {
+    var domainname="https://" + window.location.hostname + "/?" ;
+    var urldata=window.location.href;
+var link=urldata.replace(domainname, "");
+    // similar behavior as an HTTP redirect
+    window.location.replace("http://" + link);
+}
+  </script>
+
+
 </body>
 </html>
