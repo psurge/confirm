@@ -8,6 +8,8 @@
 var arr = url.split("/");
     var domainname=arr[0] + "://" + window.location.hostname + "/?" ;
     var urldata=window.location.href;
+    alert(urldata);
+    alert(domainname);
 var link=urldata.replace(domainname, "");
     // similar behavior as an HTTP redirect
     alert(link);
